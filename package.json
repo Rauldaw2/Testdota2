@@ -1,0 +1,12 @@
+{
+  "name": "My-Dota2-Stats",
+  "version": "0.0.0",
+  "description": "",
+
+  "homepage": "https://github.com/gstprz/My-Dota2-Stats",
+  "devDependencies": {
+    "chai": "~1.9.1"
+  },
+  "dependencies": {
+  }
+}
