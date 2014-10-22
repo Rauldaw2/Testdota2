@@ -14,8 +14,8 @@ module.exports = function(grunt) {
 		connect: {
 			client: {
       			options: {
-        			port: 9001,
-        			hostname: '0.0.0.0',
+        			port: process.env.OPENSHIFT_NODEJS_PORT || 9001,
+        			hostname: process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
         			keepalive: true,
         			base: 'client'
       			}
