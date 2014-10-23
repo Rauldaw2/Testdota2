@@ -1,11 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
 <head>
-<title>My Dota2 Stats</title>
+
+  <title>My-Dota2-Stats</title>
+
+  <meta name="viewport" 
+    content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+
+  <script 
+  src="../components/platform/platform.js">
+</script>
+<link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+
+<link rel="import" 
+  href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/core-icon/core-icon.html">
+<link rel="import" href="bower_components/core-field/core-field.html">
+<link rel="import" href="bower_components/core-input/core-input.html">
+<link rel="import" href="bower_components/core-icons/core-icons.html">
+<style>
+html,body {
+    
+    margin: 0;
+    
+    background-image: url("http://cloud-4.steampowered.com/ugc/703983937065332889/7F8C31C3B27D541E461DB34FDF60940077A66346/");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    color: #B40404;
+    background-position: center; 
+    background-attachment: fixed;
+    text-shadow: 2px 1px #2A0A0A;
+    font-family: 'Cinzel', serif;
+
+    
+  }
+
+
+
+  
+   #core_field {
+        opacity: 0.9;
+        position: absolute;
+        width: 20%;
+        left: 40%;
+        top: 300px;
+        background-color: rgb(221, 221, 221);
+        
+      }
+   </style>
+
 </head>
 
-<body>
-<h1>HOLA!</h1>
-</body>
+<body unresolved>
+<core-field id="core_field" icon="search" theme="core-light-theme" center center-justified horizontal layout two flex>
+      <core-icon src="http://i41.servimg.com/u/f41/17/91/61/14/icon_d10.jpg"  id="core_icon1"></core-icon>
+      <core-input willvalidate placeholder="Player search..." id="core_input" flex></core-input>
+    </core-field>
 
+<h1>My-Dota2-Stats</h1>
+
+<script>
+
+</script>
+
+
+</body>
 </html>
