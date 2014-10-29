@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 				options: {
 					extract: 'auto'
 				},
-				src: ['Gruntfile.js', 'package.json', 'client/bower.json', 'client/*.js', 'client/*.html']
+				src: ['Gruntfile.js', 'package.json', 'main/client/bower.json', 'main/client/*.js', 'main/client/*.html']
 			}
 		
 		},
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         			port: process.env.OPENSHIFT_NODEJS_PORT || 9001,
         			hostname: process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
         			keepalive: true,
-        			base: 'client'
+        			base: 'main/client'
       			}
     		}
 
