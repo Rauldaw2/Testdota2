@@ -13,10 +13,13 @@
     "grunt-cli": "^0.1.13",
     "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-jshint": "^0.10.0",
-    "node-fs-extra": "^0.8.1"
+    "node-fs-extra": "^0.8.1",
+    "request": "^2.46.0"
   },
   "dependencies": {
     "debug": "^2.1.0",
-    "express": "^4.10.0"
+    "express": "^4.10.0",
+    "body-parser": "~1.9.2",
+    "serve-favicon": "~2.1.6"
   }
 }
