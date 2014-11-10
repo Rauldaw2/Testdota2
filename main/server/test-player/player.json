@@ -1,0 +1,23 @@
+{
+	"response": {
+		"players": [
+			{
+				"steamid": "76561198010387995",
+				"communityvisibilitystate": 3,
+				"profilestate": 1,
+				"personaname": "gstprz-",
+				"lastlogoff": 1415053992,
+				"profileurl": "http://steamcommunity.com/id/gstprz-/",
+				"avatar": "http://media.steampowered.com/steamcommunity/public/images/avatars/33/334c5fbbf74aac729f4b00ad31fb89e57e6a3150.jpg",
+				"avatarmedium": "http://media.steampowered.com/steamcommunity/public/images/avatars/33/334c5fbbf74aac729f4b00ad31fb89e57e6a3150_medium.jpg",
+				"avatarfull": "http://media.steampowered.com/steamcommunity/public/images/avatars/33/334c5fbbf74aac729f4b00ad31fb89e57e6a3150_full.jpg",
+				"personastate": 0,
+				"primaryclanid": "103582791434606837",
+				"timecreated": 1243543842,
+				"personastateflags": 0,
+				"loccountrycode": "WF"
+			}
+		]
+		
+	}
+}
