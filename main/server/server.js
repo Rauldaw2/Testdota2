@@ -13,7 +13,6 @@ app.use(favicon(__dirname + '/../client/favicon.ico'));
 app.use(express.static(path.join(__dirname, '/../client')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static(path.join(__dirname, 'public')));
 
 // Custom error handler
 app.use(function(err, req, res, next) {
@@ -43,7 +42,7 @@ var basePath = path.join(__dirname, '/routes/');
 fs.readdirSync(basePath).forEach(function(filename) {
 	var basePathService = '/' + filename.replace(/\.js$/, '');
 	var serviceDefinition = basePath + filename;
-	app.use(basePathService, require(serviceDefinition)(io));
+	app.use(basePathService, require(serviceDefinition));
 });
 
 var port =  process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 9001; 
