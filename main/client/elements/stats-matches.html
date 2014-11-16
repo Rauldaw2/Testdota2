@@ -1,0 +1,134 @@
+
+<link rel="import" 
+  href="../bower_components/polymer/polymer.html">
+<link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+
+
+
+ <link rel="import" href="../bower_components/core-collapse/core-collapse.html"> 
+ <link rel="import" href="../bower_components/core-selector/core-selector.htm">
+
+
+
+
+<polymer-element name="stats-matches">
+ <template>
+    <style>    
+      :host {
+        display: block;
+        font-size: 22px;
+        width: 95%;
+      }
+     
+      core-collapse {
+        
+        color: white;
+        margin: 10px 0;
+        padding: 15px;
+        padding-bottom: 10px;
+        
+        
+        background: #151515;
+        display: block !important;
+        min-height: 15px;
+        height: auto;
+        
+        width: 95%;
+      }
+    /*  core-collapse div{
+          text-align: center;
+        vertical-align: center;
+        background: #A60A0A;
+          
+      }*/
+      
+      #details {
+         text-align: left; 
+        
+        width:100%;
+        height: auto;
+         background: white;
+         color: black;
+         padding: 10px;
+         
+        
+      }
+      
+   
+    </style>
+
+   <core-selector selected="{{selected}}">
+      <template repeat="{{match, i in matches}}">
+        <core-collapse opened?="{{selected == i}}" fixedSize>
+          <div>Match ID {{match.id}}</div>
+          <div id="details">
+             Mode: {{match.mode}} <br>
+              Hero: {{match.heroID}} <br>
+              lvl: {{match.lvl}} <br>
+              deaths: {{match.deaths}} <br>
+              assists: {{match.assists}} <br>
+              status: {{match.status}} <br>
+             lhits:  {{match.lhits}} <br>
+             denies:  {{match.denies}} <br>
+              xp: {{match.xp}} <br>
+              gold: {{match.gold}} <br>
+          </div>
+            
+              
+        </core-collapse>
+      </template>
+    </core-selector>
+ 
+  </template>
+  <script>
+    Polymer('stats-matches', {
+      ready: function() {
+        this.matches = [
+            {
+                id:1,
+                mode: 1,
+                heroID: 64,
+                lvl: 22,
+                kills: 9,
+                deaths: 5,
+                assists: 11,
+                status: 1,
+                lhits: 89,
+                denies: 17,
+                xp: 433,
+                gold: 305
+            }, 
+            {
+                id:2,
+                mode: 1,
+                heroID: 64,
+                lvl: 22,
+                kills: 9,
+                deaths: 5,
+                assists: 11,
+                status: 1,
+                lhits: 89,
+                denies: 17,
+                xp: 433,
+                gold: 305
+            }, 
+            {
+                id:3,
+                mode: 1,
+                heroID: 64,
+                lvl: 22,
+                kills: 9,
+                deaths: 5,
+                assists: 11,
+                status: 1,
+                lhits: 89,
+                denies: 17,
+                xp: 433,
+                gold: 305
+            }
+        ];
+      }
+    });
+  </script>
+
+</polymer-element>
