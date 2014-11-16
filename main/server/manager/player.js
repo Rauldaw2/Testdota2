@@ -1,9 +1,5 @@
 var daoPlayer = require('../dao/player');
 
-
-
-
-
 function create(callback) {
 
 	var player = {
@@ -16,20 +12,13 @@ function create(callback) {
 	daoPlayer.create(player, callback);
 }
 
-function getPlayer(req, res) {
-	res.json(req.player);
+function getPlayer(steamid, callback) {
+	daoPlayer.getPlayer(steamid, callback);
 }
 
 
-function checkPlayerExists (req, res, next, steamid) {
-	if (playerObj[steamid]) {
-		req.player = playerObj[steamid];
-		next();
-	} else {
-		next(new Error(steamid + ' not exists'));
-	}
-}
 
-
-module.exports = router;
-
+module.exports = {
+	create: create,
+	getPlayer: getPlayer
+};
